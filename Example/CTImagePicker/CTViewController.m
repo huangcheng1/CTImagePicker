@@ -7,8 +7,9 @@
 //
 
 #import "CTViewController.h"
+#import "CTImagePicker.h"
 
-@interface CTViewController ()
+@interface CTViewController ()<CTImagePickerDelegate>
 
 @end
 
@@ -26,4 +27,25 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [super touchesBegan:touches withEvent:event];
+    
+    CTImagePicker *picker = [[CTImagePicker alloc]init];
+    picker.callBack = self;
+    [self presentViewController:picker animated:YES completion:nil];
+    
+}
+
+- (void)didPickArrayWithImage:(NSArray *)imageArray{
+    CGFloat y = 0;
+    for (UIImage *image in imageArray) {
+        UIImageView *imageview = [[UIImageView alloc]initWithFrame:CGRectMake(0, y, 100, 100)];
+        imageview.image = image;
+        [self.view addSubview:imageview];
+        
+        y = y + 110;
+    }
+    NSLog(@"%ld",(long)imageArray.count);
+}
 @end

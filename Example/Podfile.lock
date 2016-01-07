@@ -1,0 +1,14 @@
+PODS:
+  - CTImagePicker (0.1.0)
+
+DEPENDENCIES:
+  - CTImagePicker (from `../`)
+
+EXTERNAL SOURCES:
+  CTImagePicker:
+    :path: ../
+
+SPEC CHECKSUMS:
+  CTImagePicker: 1360d0e24826bb4fe89248413e94234f76b96d37
+
+COCOAPODS: 0.39.0

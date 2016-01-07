@@ -1,0 +1,805 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		216E3FBAD7D333AF0F12F9D985AD57BB /* CTImagePicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 253E484B6F51ADE96EC1003DB0886281 /* CTImagePicker-dummy.m */; };
+		298B97FF4A0F7ABB66AA9BA501B48284 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B9990B2663FAA8B1947C62B79604B9E /* AssetsLibrary.framework */; };
+		2A82F35B902507EC5257A466E3A8E089 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCCB4F901B4C37926996DE6B64ED9AE2 /* UIKit.framework */; };
+		2CE452B8BAA4F189F8C5345B14B5EA1A /* ct_no_image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D852D79FB27E2767938CEC7DAFD2866 /* ct_no_image@2x.png */; };
+		2D6A9995DAFF92AC9D2D54757EE5B23E /* Pods-CTImagePicker_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A625ACF814D9B4C9CB84844A241EE053 /* Pods-CTImagePicker_Example-dummy.m */; };
+		2D780826FDCD03C64975EF3EF544103E /* CTImageCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA722551D982BC16F0287507B1873BCD /* CTImageCollectionViewController.m */; };
+		33C227F1012A63C1A11532B568588097 /* CTAlbumTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 376D246042CD3195C953713C732833BD /* CTAlbumTableViewCell.m */; };
+		349FACC0C6FAC15488B8D0EDE5209B07 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC4904FBE5C62A1E6D27BF73611FAEC3 /* Foundation.framework */; };
+		43148B66FE60012BF7B295607A2FFD94 /* CTImageAlbumViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = EEB8603734ED324257BA5B731925B8B6 /* CTImageAlbumViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		439770AABA9EDC240CFBBF4535E91256 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC4904FBE5C62A1E6D27BF73611FAEC3 /* Foundation.framework */; };
+		4B1C9A741C3E47B300D93066 /* CTImagePickerDoneBtn.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B1C9A721C3E47B300D93066 /* CTImagePickerDoneBtn.h */; };
+		4B1C9A751C3E47B300D93066 /* CTImagePickerDoneBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1C9A731C3E47B300D93066 /* CTImagePickerDoneBtn.m */; };
+		5CA21C8D0EF0A8647293E0450E69424F /* CTAlbumTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 45D61B43C55A95A147BE7172897354C3 /* CTAlbumTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B3FB5D789EE12FBA51984522B15504D /* CTImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C0273C7ACDC2F71D4324DAE847779984 /* CTImageCollectionViewCell.m */; };
+		6BBC60B7908450E1A870BAB1BF95A161 /* CTImageCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ABF8848FAD916BBB87CA5C672B973A0 /* CTImageCollectionViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6F258DE2BB52E882277E768422968138 /* CTImagePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 28C3AB8C449D4E79EDDF487676D84321 /* CTImagePicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7CCB0A1EF2540612E6C23D1D3C84BCFE /* CTImagePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96ED90F0E593B11618BCF3ECFD0B29A1 /* CTImagePickerViewController.m */; };
+		95C1C5D03BCD5A5B62D679E5CD88C57A /* CTConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = E4A0B581932A437DBEDC0FA4609815D5 /* CTConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		964AE1B3A6FEC6C5301D10E075C22A0D /* CTImageAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0EC0EDD3E0E75EE26834316CA483C3 /* CTImageAlbumViewController.m */; };
+		BA13797B131C1C1381B23F90A546A144 /* photo_check_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CE5E83D85A4A58AF50DC14612BEA197 /* photo_check_selected@2x.png */; };
+		C8BAAE6272AFA05BD2E0FAC36EF1A178 /* photo_check_default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D04705DD1536898E0037ADC7727F8D50 /* photo_check_default@2x.png */; };
+		D83A32D7B61CCD7444223DE36C058AF3 /* Loc.strings in Resources */ = {isa = PBXBuildFile; fileRef = D0909E6CBF6FB16E425B4147D574304C /* Loc.strings */; };
+		E8BF6CD38FB788051264EBEC172CB59A /* CTImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E04492AF15E5ED06CAAD372A4465CD /* CTImagePicker.m */; };
+		E90952ED4460C527A02D27C01966AA61 /* CTImageCollectionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 958A73A7BABBB3409ED5E820FAD7954B /* CTImageCollectionViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBE9A1C98FAD41D1DDF20708E087719D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC4904FBE5C62A1E6D27BF73611FAEC3 /* Foundation.framework */; };
+		F15A658C899EEAA0BA53B9B1342EFDA2 /* CTImagePickerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C89C70AA7F22F1E82F627C4380BBE18 /* CTImagePickerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F90B21B83B142E5AE4CFF4B0E2B9946B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0A8B11282C28B1AB9BE35199526FD76 /* MapKit.framework */; };
+		FD85D320B8DFFFEA30359683858E6F16 /* Pods-CTImagePicker_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D536D5EE4AD70720933C3A8BB257F418 /* Pods-CTImagePicker_Tests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C18D990CEA90B63B499383B74E2FDB81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97063EC50E000DC694B6B845F3F3EC4A;
+			remoteInfo = "CTImagePicker-CTImagePicker";
+		};
+		E33884C11C41ACDA06EFA53DE71C081E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0B9B12EE9E767A2F5933E383D04DD2C;
+			remoteInfo = CTImagePicker;
+		};
+		EFAF3D6E1CFDE142A3B4153E8230BDA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0B9B12EE9E767A2F5933E383D04DD2C;
+			remoteInfo = CTImagePicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00A6BC848E88723F4E2EC8DD6E38B54D /* Pods-CTImagePicker_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CTImagePicker_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		1ABF8848FAD916BBB87CA5C672B973A0 /* CTImageCollectionViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CTImageCollectionViewCell.h; sourceTree = "<group>"; };
+		2404EDBC72E5181CBDBA54E7D15E73A6 /* Pods-CTImagePicker_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CTImagePicker_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		253E484B6F51ADE96EC1003DB0886281 /* CTImagePicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CTImagePicker-dummy.m"; sourceTree = "<group>"; };
+		28C3AB8C449D4E79EDDF487676D84321 /* CTImagePicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CTImagePicker.h; sourceTree = "<group>"; };
+		2CE5E83D85A4A58AF50DC14612BEA197 /* photo_check_selected@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "photo_check_selected@2x.png"; sourceTree = "<group>"; };
+		372C5110230A9BDE624028A7EB16A799 /* CTImagePicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CTImagePicker.xcconfig; sourceTree = "<group>"; };
+		376D246042CD3195C953713C732833BD /* CTAlbumTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CTAlbumTableViewCell.m; sourceTree = "<group>"; };
+		3C2A03E15DED0FC9C2FA4F4CFD82A7C7 /* Pods-CTImagePicker_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CTImagePicker_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		3E2DCC6C0D9B7F0C7A6C900332B5FF18 /* Pods-CTImagePicker_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CTImagePicker_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		45D61B43C55A95A147BE7172897354C3 /* CTAlbumTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CTAlbumTableViewCell.h; sourceTree = "<group>"; };
+		4B1C9A721C3E47B300D93066 /* CTImagePickerDoneBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTImagePickerDoneBtn.h; sourceTree = "<group>"; };
+		4B1C9A731C3E47B300D93066 /* CTImagePickerDoneBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTImagePickerDoneBtn.m; sourceTree = "<group>"; };
+		524FDB378E846AC43EDD6FC805341956 /* Pods-CTImagePicker_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CTImagePicker_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		5C89C70AA7F22F1E82F627C4380BBE18 /* CTImagePickerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CTImagePickerViewController.h; sourceTree = "<group>"; };
+		5ED6001CC55198CF8F6A88352179DE0F /* libCTImagePicker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCTImagePicker.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		68D4C0326977B97532F551AEF251DCC1 /* CTImagePicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CTImagePicker-prefix.pch"; sourceTree = "<group>"; };
+		6F91ED21A39C12487DAA99677F53456F /* Pods-CTImagePicker_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CTImagePicker_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7D852D79FB27E2767938CEC7DAFD2866 /* ct_no_image@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "ct_no_image@2x.png"; sourceTree = "<group>"; };
+		84032B377F28B405F3B44A1AE0F707DF /* libPods-CTImagePicker_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CTImagePicker_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B9990B2663FAA8B1947C62B79604B9E /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/AssetsLibrary.framework; sourceTree = DEVELOPER_DIR; };
+		958A73A7BABBB3409ED5E820FAD7954B /* CTImageCollectionViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CTImageCollectionViewController.h; sourceTree = "<group>"; };
+		96ED90F0E593B11618BCF3ECFD0B29A1 /* CTImagePickerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CTImagePickerViewController.m; sourceTree = "<group>"; };
+		99ACAAF0BF38739137DC44E09EF4A6B8 /* Pods-CTImagePicker_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CTImagePicker_Tests-resources.sh"; sourceTree = "<group>"; };
+		9B4955E129512B73E480A434EB8D563A /* Pods-CTImagePicker_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CTImagePicker_Example-resources.sh"; sourceTree = "<group>"; };
+		A625ACF814D9B4C9CB84844A241EE053 /* Pods-CTImagePicker_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CTImagePicker_Example-dummy.m"; sourceTree = "<group>"; };
+		A7E04492AF15E5ED06CAAD372A4465CD /* CTImagePicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CTImagePicker.m; sourceTree = "<group>"; };
+		AA0C2823C4078A090C6EC7092515CF64 /* Pods-CTImagePicker_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CTImagePicker_Example.release.xcconfig"; sourceTree = "<group>"; };
+		AAC9FC12067BE030818958D96CC1F3C2 /* Pods-CTImagePicker_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CTImagePicker_Example-frameworks.sh"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BC4904FBE5C62A1E6D27BF73611FAEC3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		C0273C7ACDC2F71D4324DAE847779984 /* CTImageCollectionViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CTImageCollectionViewCell.m; sourceTree = "<group>"; };
+		C1FB3C89B8FEE7C84B39273C362C3FD4 /* Pods-CTImagePicker_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CTImagePicker_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		CD302A6CF16CE20F313C4E5ACDDF5464 /* Pods-CTImagePicker_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CTImagePicker_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D04705DD1536898E0037ADC7727F8D50 /* photo_check_default@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "photo_check_default@2x.png"; sourceTree = "<group>"; };
+		D0909E6CBF6FB16E425B4147D574304C /* Loc.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; path = Loc.strings; sourceTree = "<group>"; };
+		D0A8B11282C28B1AB9BE35199526FD76 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/MapKit.framework; sourceTree = DEVELOPER_DIR; };
+		D536D5EE4AD70720933C3A8BB257F418 /* Pods-CTImagePicker_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CTImagePicker_Tests-dummy.m"; sourceTree = "<group>"; };
+		E4A0B581932A437DBEDC0FA4609815D5 /* CTConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CTConfig.h; sourceTree = "<group>"; };
+		E9B7CFB0BDECB199E770EDE3F7D9D791 /* libPods-CTImagePicker_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CTImagePicker_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBCA9D232F2F594DF4D69A7EA6BBECB7 /* CTImagePicker.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CTImagePicker.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED0EC0EDD3E0E75EE26834316CA483C3 /* CTImageAlbumViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CTImageAlbumViewController.m; sourceTree = "<group>"; };
+		EEB8603734ED324257BA5B731925B8B6 /* CTImageAlbumViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CTImageAlbumViewController.h; sourceTree = "<group>"; };
+		FA722551D982BC16F0287507B1873BCD /* CTImageCollectionViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CTImageCollectionViewController.m; sourceTree = "<group>"; };
+		FCCB4F901B4C37926996DE6B64ED9AE2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		05CC63720F972DA584DC05D83C1B57C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		273FFB03EB111F6A37173932E66671F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBE9A1C98FAD41D1DDF20708E087719D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B989954B1656DCF3BFA0F0FA6BBE9DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				298B97FF4A0F7ABB66AA9BA501B48284 /* AssetsLibrary.framework in Frameworks */,
+				439770AABA9EDC240CFBBF4535E91256 /* Foundation.framework in Frameworks */,
+				F90B21B83B142E5AE4CFF4B0E2B9946B /* MapKit.framework in Frameworks */,
+				2A82F35B902507EC5257A466E3A8E089 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A66C00E7582285B80BD3E74882A1A182 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				349FACC0C6FAC15488B8D0EDE5209B07 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00D7C407BB3BF55828D60B01494E1DC2 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9254F8614BA67DAAAB182316B6CD34EC /* CTImagePicker */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		00E976B699224D121E6437EB0396E48F /* loc */ = {
+			isa = PBXGroup;
+			children = (
+				D0909E6CBF6FB16E425B4147D574304C /* Loc.strings */,
+			);
+			path = loc;
+			sourceTree = "<group>";
+		};
+		0D1F393F07B4A66A2C7B64EA9BC5BC08 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EDCA52C23F584DBF75BBF660EBF2344E /* controllers */,
+				185C2E2C6398A96D9B619E67DCB180C9 /* util */,
+				7D77E5F8E88A1C80FFCD901F105329A2 /* views */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25E44BB0F2DCA6571370B52B209BF7A8 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		185C2E2C6398A96D9B619E67DCB180C9 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				E4A0B581932A437DBEDC0FA4609815D5 /* CTConfig.h */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		25E44BB0F2DCA6571370B52B209BF7A8 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				8B9990B2663FAA8B1947C62B79604B9E /* AssetsLibrary.framework */,
+				BC4904FBE5C62A1E6D27BF73611FAEC3 /* Foundation.framework */,
+				D0A8B11282C28B1AB9BE35199526FD76 /* MapKit.framework */,
+				FCCB4F901B4C37926996DE6B64ED9AE2 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		2F40AA12A35EBCD3EF84C9DE66FE560F /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				A8F0EB3CBE44534ACC99A5B081589B8A /* Assets */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		3A82AD72E133EC4FD32146883A16C1AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EBCA9D232F2F594DF4D69A7EA6BBECB7 /* CTImagePicker.bundle */,
+				5ED6001CC55198CF8F6A88352179DE0F /* libCTImagePicker.a */,
+				E9B7CFB0BDECB199E770EDE3F7D9D791 /* libPods-CTImagePicker_Example.a */,
+				84032B377F28B405F3B44A1AE0F707DF /* libPods-CTImagePicker_Tests.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6AAA0D2BDBB7CFBFA3509C8CFBBDEBA2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				372C5110230A9BDE624028A7EB16A799 /* CTImagePicker.xcconfig */,
+				253E484B6F51ADE96EC1003DB0886281 /* CTImagePicker-dummy.m */,
+				68D4C0326977B97532F551AEF251DCC1 /* CTImagePicker-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/CTImagePicker";
+			sourceTree = "<group>";
+		};
+		6D8A3F1D53E7988C1292722CEF0E9BE8 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA0FA0E4CF69B72A300CB19C60205BE3 /* Pods-CTImagePicker_Example */,
+				B3A1060049B68843EA563DB5B36B5B8A /* Pods-CTImagePicker_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7D77E5F8E88A1C80FFCD901F105329A2 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				45D61B43C55A95A147BE7172897354C3 /* CTAlbumTableViewCell.h */,
+				376D246042CD3195C953713C732833BD /* CTAlbumTableViewCell.m */,
+				1ABF8848FAD916BBB87CA5C672B973A0 /* CTImageCollectionViewCell.h */,
+				C0273C7ACDC2F71D4324DAE847779984 /* CTImageCollectionViewCell.m */,
+				4B1C9A721C3E47B300D93066 /* CTImagePickerDoneBtn.h */,
+				4B1C9A731C3E47B300D93066 /* CTImagePickerDoneBtn.m */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				00D7C407BB3BF55828D60B01494E1DC2 /* Development Pods */,
+				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
+				3A82AD72E133EC4FD32146883A16C1AD /* Products */,
+				6D8A3F1D53E7988C1292722CEF0E9BE8 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		86ED451ECACED8F1325D513A304BCE14 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2F40AA12A35EBCD3EF84C9DE66FE560F /* Pod */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		9254F8614BA67DAAAB182316B6CD34EC /* CTImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				BC75F152487EEA2E94E61575921F4F8F /* Pod */,
+				86ED451ECACED8F1325D513A304BCE14 /* Resources */,
+				6AAA0D2BDBB7CFBFA3509C8CFBBDEBA2 /* Support Files */,
+			);
+			name = CTImagePicker;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		A8F0EB3CBE44534ACC99A5B081589B8A /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				F960F53A797678FB8B905CEA91D920BA /* images */,
+				00E976B699224D121E6437EB0396E48F /* loc */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		B3A1060049B68843EA563DB5B36B5B8A /* Pods-CTImagePicker_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				CD302A6CF16CE20F313C4E5ACDDF5464 /* Pods-CTImagePicker_Tests-acknowledgements.markdown */,
+				524FDB378E846AC43EDD6FC805341956 /* Pods-CTImagePicker_Tests-acknowledgements.plist */,
+				D536D5EE4AD70720933C3A8BB257F418 /* Pods-CTImagePicker_Tests-dummy.m */,
+				2404EDBC72E5181CBDBA54E7D15E73A6 /* Pods-CTImagePicker_Tests-frameworks.sh */,
+				99ACAAF0BF38739137DC44E09EF4A6B8 /* Pods-CTImagePicker_Tests-resources.sh */,
+				C1FB3C89B8FEE7C84B39273C362C3FD4 /* Pods-CTImagePicker_Tests.debug.xcconfig */,
+				3E2DCC6C0D9B7F0C7A6C900332B5FF18 /* Pods-CTImagePicker_Tests.release.xcconfig */,
+			);
+			name = "Pods-CTImagePicker_Tests";
+			path = "Target Support Files/Pods-CTImagePicker_Tests";
+			sourceTree = "<group>";
+		};
+		BC75F152487EEA2E94E61575921F4F8F /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				0D1F393F07B4A66A2C7B64EA9BC5BC08 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		DA0FA0E4CF69B72A300CB19C60205BE3 /* Pods-CTImagePicker_Example */ = {
+			isa = PBXGroup;
+			children = (
+				6F91ED21A39C12487DAA99677F53456F /* Pods-CTImagePicker_Example-acknowledgements.markdown */,
+				00A6BC848E88723F4E2EC8DD6E38B54D /* Pods-CTImagePicker_Example-acknowledgements.plist */,
+				A625ACF814D9B4C9CB84844A241EE053 /* Pods-CTImagePicker_Example-dummy.m */,
+				AAC9FC12067BE030818958D96CC1F3C2 /* Pods-CTImagePicker_Example-frameworks.sh */,
+				9B4955E129512B73E480A434EB8D563A /* Pods-CTImagePicker_Example-resources.sh */,
+				3C2A03E15DED0FC9C2FA4F4CFD82A7C7 /* Pods-CTImagePicker_Example.debug.xcconfig */,
+				AA0C2823C4078A090C6EC7092515CF64 /* Pods-CTImagePicker_Example.release.xcconfig */,
+			);
+			name = "Pods-CTImagePicker_Example";
+			path = "Target Support Files/Pods-CTImagePicker_Example";
+			sourceTree = "<group>";
+		};
+		EDCA52C23F584DBF75BBF660EBF2344E /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EEB8603734ED324257BA5B731925B8B6 /* CTImageAlbumViewController.h */,
+				ED0EC0EDD3E0E75EE26834316CA483C3 /* CTImageAlbumViewController.m */,
+				958A73A7BABBB3409ED5E820FAD7954B /* CTImageCollectionViewController.h */,
+				FA722551D982BC16F0287507B1873BCD /* CTImageCollectionViewController.m */,
+				28C3AB8C449D4E79EDDF487676D84321 /* CTImagePicker.h */,
+				A7E04492AF15E5ED06CAAD372A4465CD /* CTImagePicker.m */,
+				5C89C70AA7F22F1E82F627C4380BBE18 /* CTImagePickerViewController.h */,
+				96ED90F0E593B11618BCF3ECFD0B29A1 /* CTImagePickerViewController.m */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		F960F53A797678FB8B905CEA91D920BA /* images */ = {
+			isa = PBXGroup;
+			children = (
+				7D852D79FB27E2767938CEC7DAFD2866 /* ct_no_image@2x.png */,
+				D04705DD1536898E0037ADC7727F8D50 /* photo_check_default@2x.png */,
+				2CE5E83D85A4A58AF50DC14612BEA197 /* photo_check_selected@2x.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		26B3309BC57FF12A52E9C96F463A3FCF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CA21C8D0EF0A8647293E0450E69424F /* CTAlbumTableViewCell.h in Headers */,
+				95C1C5D03BCD5A5B62D679E5CD88C57A /* CTConfig.h in Headers */,
+				43148B66FE60012BF7B295607A2FFD94 /* CTImageAlbumViewController.h in Headers */,
+				6BBC60B7908450E1A870BAB1BF95A161 /* CTImageCollectionViewCell.h in Headers */,
+				E90952ED4460C527A02D27C01966AA61 /* CTImageCollectionViewController.h in Headers */,
+				6F258DE2BB52E882277E768422968138 /* CTImagePicker.h in Headers */,
+				4B1C9A741C3E47B300D93066 /* CTImagePickerDoneBtn.h in Headers */,
+				F15A658C899EEAA0BA53B9B1342EFDA2 /* CTImagePickerViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		118F3CEA46FB76CDFF8A44C2F97F03BF /* Pods-CTImagePicker_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C25E7949F25CF33C3E5D553B09507F80 /* Build configuration list for PBXNativeTarget "Pods-CTImagePicker_Example" */;
+			buildPhases = (
+				1A8CA6ADBCBDD2C01E98B8793F4CE5E5 /* Sources */,
+				A66C00E7582285B80BD3E74882A1A182 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA752A456AD29C27AD96AD4502CD1BA0 /* PBXTargetDependency */,
+			);
+			name = "Pods-CTImagePicker_Example";
+			productName = "Pods-CTImagePicker_Example";
+			productReference = E9B7CFB0BDECB199E770EDE3F7D9D791 /* libPods-CTImagePicker_Example.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		97063EC50E000DC694B6B845F3F3EC4A /* CTImagePicker-CTImagePicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB3A479157EB7378BB6EDEDC4D8D20FD /* Build configuration list for PBXNativeTarget "CTImagePicker-CTImagePicker" */;
+			buildPhases = (
+				0796EBAA3793EDF7B2C835CBD5B994E2 /* Sources */,
+				05CC63720F972DA584DC05D83C1B57C7 /* Frameworks */,
+				14C34B1166797DD7EE01A4D81B861670 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CTImagePicker-CTImagePicker";
+			productName = "CTImagePicker-CTImagePicker";
+			productReference = EBCA9D232F2F594DF4D69A7EA6BBECB7 /* CTImagePicker.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		D0B9B12EE9E767A2F5933E383D04DD2C /* CTImagePicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CF1D2838069755FD6105A233ADABDA7 /* Build configuration list for PBXNativeTarget "CTImagePicker" */;
+			buildPhases = (
+				2E98526CBD2764CE40ACB09E42EB47AE /* Sources */,
+				2B989954B1656DCF3BFA0F0FA6BBE9DF /* Frameworks */,
+				26B3309BC57FF12A52E9C96F463A3FCF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A8EA838FE2798CCD5902D9D98150DCF1 /* PBXTargetDependency */,
+			);
+			name = CTImagePicker;
+			productName = CTImagePicker;
+			productReference = 5ED6001CC55198CF8F6A88352179DE0F /* libCTImagePicker.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		EA5C00E3A453919E4FF4CEB281B9EF23 /* Pods-CTImagePicker_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 538C6FDAC2911FE4E95B6608EFD47BA4 /* Build configuration list for PBXNativeTarget "Pods-CTImagePicker_Tests" */;
+			buildPhases = (
+				3218B7A2172EAC60FD9D5AC048E76A88 /* Sources */,
+				273FFB03EB111F6A37173932E66671F6 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43416A86587BC3745AF5CFA9468FF9F2 /* PBXTargetDependency */,
+			);
+			name = "Pods-CTImagePicker_Tests";
+			productName = "Pods-CTImagePicker_Tests";
+			productReference = 84032B377F28B405F3B44A1AE0F707DF /* libPods-CTImagePicker_Tests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 3A82AD72E133EC4FD32146883A16C1AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0B9B12EE9E767A2F5933E383D04DD2C /* CTImagePicker */,
+				97063EC50E000DC694B6B845F3F3EC4A /* CTImagePicker-CTImagePicker */,
+				118F3CEA46FB76CDFF8A44C2F97F03BF /* Pods-CTImagePicker_Example */,
+				EA5C00E3A453919E4FF4CEB281B9EF23 /* Pods-CTImagePicker_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		14C34B1166797DD7EE01A4D81B861670 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CE452B8BAA4F189F8C5345B14B5EA1A /* ct_no_image@2x.png in Resources */,
+				D83A32D7B61CCD7444223DE36C058AF3 /* Loc.strings in Resources */,
+				C8BAAE6272AFA05BD2E0FAC36EF1A178 /* photo_check_default@2x.png in Resources */,
+				BA13797B131C1C1381B23F90A546A144 /* photo_check_selected@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0796EBAA3793EDF7B2C835CBD5B994E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A8CA6ADBCBDD2C01E98B8793F4CE5E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D6A9995DAFF92AC9D2D54757EE5B23E /* Pods-CTImagePicker_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E98526CBD2764CE40ACB09E42EB47AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33C227F1012A63C1A11532B568588097 /* CTAlbumTableViewCell.m in Sources */,
+				964AE1B3A6FEC6C5301D10E075C22A0D /* CTImageAlbumViewController.m in Sources */,
+				6B3FB5D789EE12FBA51984522B15504D /* CTImageCollectionViewCell.m in Sources */,
+				4B1C9A751C3E47B300D93066 /* CTImagePickerDoneBtn.m in Sources */,
+				2D780826FDCD03C64975EF3EF544103E /* CTImageCollectionViewController.m in Sources */,
+				216E3FBAD7D333AF0F12F9D985AD57BB /* CTImagePicker-dummy.m in Sources */,
+				E8BF6CD38FB788051264EBEC172CB59A /* CTImagePicker.m in Sources */,
+				7CCB0A1EF2540612E6C23D1D3C84BCFE /* CTImagePickerViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3218B7A2172EAC60FD9D5AC048E76A88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD85D320B8DFFFEA30359683858E6F16 /* Pods-CTImagePicker_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		43416A86587BC3745AF5CFA9468FF9F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CTImagePicker;
+			target = D0B9B12EE9E767A2F5933E383D04DD2C /* CTImagePicker */;
+			targetProxy = EFAF3D6E1CFDE142A3B4153E8230BDA2 /* PBXContainerItemProxy */;
+		};
+		A8EA838FE2798CCD5902D9D98150DCF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CTImagePicker-CTImagePicker";
+			target = 97063EC50E000DC694B6B845F3F3EC4A /* CTImagePicker-CTImagePicker */;
+			targetProxy = C18D990CEA90B63B499383B74E2FDB81 /* PBXContainerItemProxy */;
+		};
+		FA752A456AD29C27AD96AD4502CD1BA0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CTImagePicker;
+			target = D0B9B12EE9E767A2F5933E383D04DD2C /* CTImagePicker */;
+			targetProxy = E33884C11C41ACDA06EFA53DE71C081E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		03CA91998D6773EC5D02B3DB87B8353E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0AB20C101164CD176C2950DF68A2AC5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E2DCC6C0D9B7F0C7A6C900332B5FF18 /* Pods-CTImagePicker_Tests.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		0EB89E58F85A5973A3EE59BE943949F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 372C5110230A9BDE624028A7EB16A799 /* CTImagePicker.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = CTImagePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		4B2CFB72D15BA1C3692C3DCCC238E6AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1FB3C89B8FEE7C84B39273C362C3FD4 /* Pods-CTImagePicker_Tests.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		579468F5D38512C007E90CCDEC7BFE79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA0C2823C4078A090C6EC7092515CF64 /* Pods-CTImagePicker_Example.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		5FBC596D1FEABB7C24E9E4D4D99143D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 372C5110230A9BDE624028A7EB16A799 /* CTImagePicker.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = CTImagePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		98409ACB89A3FDAB99D06DA7570F2B3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 372C5110230A9BDE624028A7EB16A799 /* CTImagePicker.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CTImagePicker/CTImagePicker-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		ACBE1A0E5386F0A8FAE768241C28257E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C2A03E15DED0FC9C2FA4F4CFD82A7C7 /* Pods-CTImagePicker_Example.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C9AC27DFC5B72C79BE9B5D6FC7B2CA6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 372C5110230A9BDE624028A7EB16A799 /* CTImagePicker.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CTImagePicker/CTImagePicker-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */,
+				03CA91998D6773EC5D02B3DB87B8353E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CF1D2838069755FD6105A233ADABDA7 /* Build configuration list for PBXNativeTarget "CTImagePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98409ACB89A3FDAB99D06DA7570F2B3E /* Debug */,
+				C9AC27DFC5B72C79BE9B5D6FC7B2CA6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		538C6FDAC2911FE4E95B6608EFD47BA4 /* Build configuration list for PBXNativeTarget "Pods-CTImagePicker_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B2CFB72D15BA1C3692C3DCCC238E6AE /* Debug */,
+				0AB20C101164CD176C2950DF68A2AC5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C25E7949F25CF33C3E5D553B09507F80 /* Build configuration list for PBXNativeTarget "Pods-CTImagePicker_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACBE1A0E5386F0A8FAE768241C28257E /* Debug */,
+				579468F5D38512C007E90CCDEC7BFE79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB3A479157EB7378BB6EDEDC4D8D20FD /* Build configuration list for PBXNativeTarget "CTImagePicker-CTImagePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EB89E58F85A5973A3EE59BE943949F5 /* Debug */,
+				5FBC596D1FEABB7C24E9E4D4D99143D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
