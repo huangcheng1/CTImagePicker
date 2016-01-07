@@ -45,6 +45,12 @@ pod "CTImagePicker"
 ![image](http://7xpas5.com1.z0.glb.clouddn.com/IMG_1166.PNG?imageView/1/w/187/h/333)
 ![image](http://7xpas5.com1.z0.glb.clouddn.com/IMG_1167.PNG?imageView/1/w/187/h/333)
 
+
+## question 
+
+1. havn't number limit
+2. havn't preview function
+
 ## Author
 
 黄成, 632300630@qq.com
