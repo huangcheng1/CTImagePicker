@@ -20,6 +20,31 @@ it, simply add the following line to your Podfile:
 pod "CTImagePicker"
 ```
 
+## Use
+
+```
+     #import "CTImagePicker.h"
+
+    CTImagePicker *picker = [[CTImagePicker alloc]init];
+    picker.callBack = self;
+    [self presentViewController:picker animated:YES completion:nil];
+
+实现协议<CTImagePickerDelegate>
+    
+- (void)didPickArrayWithImage:(NSArray *)imageArray{
+    for (UIImage *image in imageArray) {
+    }
+    NSLog(@"%ld",(long)imageArray.count);
+}
+
+```
+
+## screen shot
+
+![image](http://7xpas5.com1.z0.glb.clouddn.com/IMG_1164.PNG?imageView/1/w/187/h/333)
+![image](http://7xpas5.com1.z0.glb.clouddn.com/IMG_1166.PNG?imageView/1/w/187/h/333)
+![image](http://7xpas5.com1.z0.glb.clouddn.com/IMG_1167.PNG?imageView/1/w/187/h/333)
+
 ## Author
 
 黄成, 632300630@qq.com
