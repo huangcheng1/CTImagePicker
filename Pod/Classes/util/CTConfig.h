@@ -15,4 +15,6 @@
 
 #define kCTSelectedImageKey @"kCTSelectedImageKey"
 
+#define TARGET_VERSION_8_0 [[[UIDevice currentDevice]systemVersion] floatValue] > 7.9 ? YES : NO
+
 #endif /* CTConfig_h */

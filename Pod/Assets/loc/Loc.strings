@@ -9,3 +9,6 @@
 "photo" = "照片";
 "ct_pickerimage_preview" = "预览";
 "ct_pickerimage_finish" = "完成";
+"ct_pickerimage_moretips" = "您最多只能选择";
+"ct_pickerimage_maxnum_zhang" = "张";
+"ct_pickerimage_iknow" = "我知道了";

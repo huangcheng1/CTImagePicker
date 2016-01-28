@@ -49,7 +49,7 @@ pod "CTImagePicker"
 ## question 
 
 1. havn't number limit
-2. havn't preview function
+2. havn't preview function`
 
 ## Author
 

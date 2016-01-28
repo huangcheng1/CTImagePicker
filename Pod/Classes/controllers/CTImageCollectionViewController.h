@@ -16,4 +16,5 @@
 
 - (instancetype)initWithAssetsGroupUrl:(NSURL*)groupUrl;
 
+- (void)dismissNav:(id)sender;
 @end

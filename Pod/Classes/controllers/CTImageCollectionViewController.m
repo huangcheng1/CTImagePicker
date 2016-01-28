@@ -10,7 +10,11 @@
 #import "CTImageCollectionViewCell.h"
 #import "CTConfig.h"
 #import "CTImagePickerDoneBtn.h"
+#import "CTImagePreViewController.h"
+#import "CTImagePreViewController.h"
 #import <AssetsLibrary/AssetsLibrary.h>
+#import "CTImagePickerStyle.h"
+#import "CTImagePicker.h"
 
 @interface CTImageCollectionViewController ()<UICollectionViewDataSource,UICollectionViewDelegate>
 
@@ -27,6 +31,12 @@
 
 @property (nonatomic,strong) UIBarButtonItem *preview;
 
+@property (nonatomic,strong) CTImagePreViewController *previewViewController;
+
+@property (nonatomic,strong) CTImagePreViewController *selectedPreviewController;
+
+@property (nonatomic,strong) CTImagePickerStyle *style;
+
 @end
 
 @implementation CTImageCollectionViewController
@@ -35,6 +45,7 @@
     self = [super init];
     if (self) {
         self.alGroupUrl = groupUrl;
+        self.style = [CTImagePickerStyle sharedStyle];
     }
     return self;
 }
@@ -44,8 +55,11 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.collectionView];
-    self.navigationController.toolbarHidden = NO;
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(dismissCtr)];
+    if (self.style.rightBarStr) {
+        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:self.style.rightBarStr style:UIBarButtonItemStyleBordered target:self action:@selector(customRightNavClick:)];
+    }else{
+        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(dismissNav:)];
+    }
     
     self.preview = [[UIBarButtonItem alloc]initWithTitle:CTImagePickerLoc(@"ct_pickerimage_preview") style:UIBarButtonItemStyleDone target:self action:@selector(previewShowCtr)];
     [self setPreviewView];
@@ -59,6 +73,13 @@
     [self loadData];
 }
 
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.navigationController.toolbarHidden = NO;
+    [self.navigationController setNavigationBarHidden:NO];
+    [self.collectionView reloadData];
+}
+
 - (void)setPreviewView{
     if (self.selectedArray.count > 0 ) {
         self.preview.tintColor = [UIColor blackColor];
@@ -66,8 +87,13 @@
         self.preview.tintColor = [UIColor lightGrayColor];
     }
 }
-
-- (void)dismissCtr{
+- (void)customRightNavClick:(id)sender{
+    CTImagePicker *imagePicker = (CTImagePicker*)self.navigationController;
+    if ([imagePicker.callBack respondsToSelector:@selector(didClickNavRightBar:)]) {
+        [imagePicker.callBack didClickNavRightBar:sender];
+    }
+}
+- (void)dismissNav:(id)sender{
     [self.navigationController dismissViewControllerAnimated:YES completion:nil];
 }
 
@@ -78,7 +104,10 @@
 - (void)previewShowCtr{
     
     if (self.selectedArray.count > 0) {
-        
+        self.selectedPreviewController.dataArray = self.selectedArray;
+        self.selectedPreviewController.selectedArray = self.selectedArray;
+        self.selectedPreviewController.currentImageIndex = 0;
+        [self.navigationController pushViewController:self.selectedPreviewController animated:YES];
     }
 }
 - (void)loadData{
@@ -106,7 +135,9 @@
         }];
         dispatch_async(dispatch_get_main_queue(), ^{
             [self.collectionView reloadData];
+            
             [self scrollToBottom:NO];
+            self.previewViewController.dataArray = self.resultArray;
         });
     });
 }
@@ -142,6 +173,20 @@
 }
 
 - (void)addSelectAlasset:(ALAsset*)alasset{
+    
+    if (self.style.maxNum && self.selectedArray.count == self.style.maxNum.integerValue) {
+        //提示超过数量
+        NSString *message;
+        if (self.style.moreTipsStr) {
+            message = self.style.moreTipsStr;
+        }else{
+            message = [NSString stringWithFormat:@"%@%@%@",CTImagePickerLoc(@"ct_pickerimage_moretips"),self.style.maxNum,CTImagePickerLoc(@"ct_pickerimage_maxnum_zhang")];
+        }
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:nil message:message delegate:nil cancelButtonTitle:CTImagePickerLoc(@"ct_pickerimage_iknow") otherButtonTitles:nil, nil];
+        [alert show];
+        [self.collectionView reloadData];
+        return;
+    }
     [self.selectedArray addObject:alasset];
     [self.doneBtn setSelectedNumber:self.selectedArray.count];
     [self setPreviewView];
@@ -190,6 +235,9 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     //跳转预览
+    self.previewViewController.currentImageIndex = (int)indexPath.row;
+    self.previewViewController.selectedArray = self.selectedArray;
+    [self.navigationController pushViewController:self.previewViewController animated:YES];
 }
 
 - (UICollectionView *)collectionView{
@@ -242,4 +290,17 @@
     return _doneBtn;
 }
 
+- (CTImagePreViewController *)previewViewController{
+    if (!_previewViewController) {
+        _previewViewController = [[CTImagePreViewController alloc]init];
+    }
+    return _previewViewController;
+}
+
+- (CTImagePreViewController *)selectedPreviewController{
+    if (!_selectedPreviewController) {
+        _selectedPreviewController = [[CTImagePreViewController alloc]init];
+    }
+    return _selectedPreviewController;
+}
 @end

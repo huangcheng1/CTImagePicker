@@ -10,4 +10,6 @@
 
 @interface CTImageAlbumViewController : UIViewController
 
+- (void)dismissNav:(id)sender;
+
 @end

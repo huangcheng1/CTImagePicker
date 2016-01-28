@@ -10,7 +10,9 @@
 #import "CTConfig.h"
 #import "CTAlbumTableViewCell.h"
 #import "CTImageCollectionViewController.h"
+#import "CTImagePickerStyle.h"
 #import <AssetsLibrary/AssetsLibrary.h>
+#import "CTImagePicker.h"
 
 @interface CTImageAlbumViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -31,7 +33,13 @@
     [self.view addSubview:self.tableview];
     [self loadAssetsGroup];
     
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(dismissNav)];
+    CTImagePickerStyle *style = [CTImagePickerStyle sharedStyle];
+    if (style.rightBarStr) {
+        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:style.rightBarStr style:UIBarButtonItemStyleBordered target:self action:@selector(customRightNavClick:)];
+        self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(dismissNav:)];
+    }else{
+        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(dismissNav:)];
+    }
 }
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -82,7 +90,14 @@
     }
 }
 
-- (void)dismissNav{
+- (void)customRightNavClick:(id)sender{
+    CTImagePicker *imagePicker = (CTImagePicker*)self.navigationController;
+    if ([imagePicker.callBack respondsToSelector:@selector(didClickNavRightBar:)]) {
+        [imagePicker.callBack didClickNavRightBar:sender];
+    }
+}
+
+- (void)dismissNav:(id)sender{
     [self.navigationController dismissViewControllerAnimated:YES completion:nil];
 }
 
@@ -107,7 +122,7 @@
         NSInteger count = [algroup numberOfAssets];
         UIImage *photo = [UIImage imageWithCGImage:[algroup posterImage]];
         if (!photo) {
-            photo = [UIImage imageNamed:CTImagePickerImg(@"ct_no_image")];
+            photo = [UIImage imageNamed:CTImagePickerImg(@"ct_imgpicpre_no_image")];
         }
         [cell setAlbumName:name albumCount:count albumImage:photo];
     }

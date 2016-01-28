@@ -27,14 +27,15 @@
     // Dispose of any resources that can be recreated.
 }
 
-
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    [super touchesBegan:touches withEvent:event];
+- (void)click:(id)sender{
     
     CTImagePicker *picker = [[CTImagePicker alloc]init];
+    [picker setPickerTintColor:[UIColor redColor]];
+    [picker setPickerUnableTintColor:[UIColor lightGrayColor]];
+    [picker setMaxSelectImageNum:@(5) moreWithTips:@"您最多能选择5张"];
+    [picker setRightNavBar:@"照片说明"];
     picker.callBack = self;
     [self presentViewController:picker animated:YES completion:nil];
-    
 }
 
 - (void)didPickArrayWithImage:(NSArray *)imageArray{
@@ -47,5 +48,9 @@
         y = y + 110;
     }
     NSLog(@"%ld",(long)imageArray.count);
+}
+
+- (void)didClickNavRightBar:(id)sender{
+    NSLog(@"定制rightnav");
 }
 @end

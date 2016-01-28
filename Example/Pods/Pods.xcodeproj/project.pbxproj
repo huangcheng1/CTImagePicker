@@ -7,116 +7,151 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		216E3FBAD7D333AF0F12F9D985AD57BB /* CTImagePicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 253E484B6F51ADE96EC1003DB0886281 /* CTImagePicker-dummy.m */; };
-		298B97FF4A0F7ABB66AA9BA501B48284 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B9990B2663FAA8B1947C62B79604B9E /* AssetsLibrary.framework */; };
-		2A82F35B902507EC5257A466E3A8E089 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCCB4F901B4C37926996DE6B64ED9AE2 /* UIKit.framework */; };
-		2CE452B8BAA4F189F8C5345B14B5EA1A /* ct_no_image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D852D79FB27E2767938CEC7DAFD2866 /* ct_no_image@2x.png */; };
+		00B1CB49EDD32BFF9CA8BE43D3608E32 /* CTImgPreCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05165ABB2BBCEB3C521DF52E73BF42AF /* CTImgPreCollectionViewCell.m */; };
+		12666369DF5329B201CE5361DC1BD7AB /* CTImagePickerDoneBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 00927FC4F6779EC3D97BEC38E141B853 /* CTImagePickerDoneBtn.m */; };
+		15014E953A6A5AD197879D1E81C01797 /* CTImagePicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 253E484B6F51ADE96EC1003DB0886281 /* CTImagePicker-dummy.m */; };
+		15187F8FEA3B2C859E3C21541C1AC9AF /* CTAlbumTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = C5FC81CB3BF65863D3336798FF7E53D1 /* CTAlbumTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		16B16E772F3AB1BA044D693DD40DC5A4 /* photo_check_default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CFEDF3F33BBF1090C9AEF6ECD1E2D75 /* photo_check_default@2x.png */; };
+		1CAD024B1280DCF59C569F9EBBA9EB4F /* CTConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = D237AD40EE8746AAD5ED32FC93D48A1C /* CTConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1FAC4A7C3B417393C8BFDA114FC16C00 /* CTImgPreCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CFA93752B73F5C1A5FBC3A62FA240AD /* CTImgPreCollectionViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2411E117AD92B8C67A74AA9ED3359EE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC4904FBE5C62A1E6D27BF73611FAEC3 /* Foundation.framework */; };
 		2D6A9995DAFF92AC9D2D54757EE5B23E /* Pods-CTImagePicker_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A625ACF814D9B4C9CB84844A241EE053 /* Pods-CTImagePicker_Example-dummy.m */; };
-		2D780826FDCD03C64975EF3EF544103E /* CTImageCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA722551D982BC16F0287507B1873BCD /* CTImageCollectionViewController.m */; };
-		33C227F1012A63C1A11532B568588097 /* CTAlbumTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 376D246042CD3195C953713C732833BD /* CTAlbumTableViewCell.m */; };
+		32968F1727232B438A94219E8FCE8255 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCCB4F901B4C37926996DE6B64ED9AE2 /* UIKit.framework */; };
 		349FACC0C6FAC15488B8D0EDE5209B07 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC4904FBE5C62A1E6D27BF73611FAEC3 /* Foundation.framework */; };
-		43148B66FE60012BF7B295607A2FFD94 /* CTImageAlbumViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = EEB8603734ED324257BA5B731925B8B6 /* CTImageAlbumViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		439770AABA9EDC240CFBBF4535E91256 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC4904FBE5C62A1E6D27BF73611FAEC3 /* Foundation.framework */; };
-		4B1C9A741C3E47B300D93066 /* CTImagePickerDoneBtn.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B1C9A721C3E47B300D93066 /* CTImagePickerDoneBtn.h */; };
-		4B1C9A751C3E47B300D93066 /* CTImagePickerDoneBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1C9A731C3E47B300D93066 /* CTImagePickerDoneBtn.m */; };
-		5CA21C8D0EF0A8647293E0450E69424F /* CTAlbumTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 45D61B43C55A95A147BE7172897354C3 /* CTAlbumTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6B3FB5D789EE12FBA51984522B15504D /* CTImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C0273C7ACDC2F71D4324DAE847779984 /* CTImageCollectionViewCell.m */; };
-		6BBC60B7908450E1A870BAB1BF95A161 /* CTImageCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ABF8848FAD916BBB87CA5C672B973A0 /* CTImageCollectionViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6F258DE2BB52E882277E768422968138 /* CTImagePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 28C3AB8C449D4E79EDDF487676D84321 /* CTImagePicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7CCB0A1EF2540612E6C23D1D3C84BCFE /* CTImagePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96ED90F0E593B11618BCF3ECFD0B29A1 /* CTImagePickerViewController.m */; };
-		95C1C5D03BCD5A5B62D679E5CD88C57A /* CTConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = E4A0B581932A437DBEDC0FA4609815D5 /* CTConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		964AE1B3A6FEC6C5301D10E075C22A0D /* CTImageAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0EC0EDD3E0E75EE26834316CA483C3 /* CTImageAlbumViewController.m */; };
-		BA13797B131C1C1381B23F90A546A144 /* photo_check_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CE5E83D85A4A58AF50DC14612BEA197 /* photo_check_selected@2x.png */; };
-		C8BAAE6272AFA05BD2E0FAC36EF1A178 /* photo_check_default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D04705DD1536898E0037ADC7727F8D50 /* photo_check_default@2x.png */; };
-		D83A32D7B61CCD7444223DE36C058AF3 /* Loc.strings in Resources */ = {isa = PBXBuildFile; fileRef = D0909E6CBF6FB16E425B4147D574304C /* Loc.strings */; };
-		E8BF6CD38FB788051264EBEC172CB59A /* CTImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E04492AF15E5ED06CAAD372A4465CD /* CTImagePicker.m */; };
-		E90952ED4460C527A02D27C01966AA61 /* CTImageCollectionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 958A73A7BABBB3409ED5E820FAD7954B /* CTImageCollectionViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BE7BAB86CDBCDA59FFEF2420013D076 /* ct_imagepicker_check_default@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA12B1446F631C2F48B8083EC490EE29 /* ct_imagepicker_check_default@3x.png */; };
+		3DDCFD230FC61F3BF046E8FD515704D2 /* CTImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DEE88C9EBFE6341AF4C0FD48ACC0DAC /* CTImageCollectionViewCell.m */; };
+		517505823253A2C78F9E2F37DE2051E1 /* CTAlbumTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA69ADD90637E9E1D26E0EF76E74146 /* CTAlbumTableViewCell.m */; };
+		5479FCFFB67D5A282486648436559101 /* ct_imagepicker_check_default_background@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 97ABC3611CF9F29EEA9AA109E50AD328 /* ct_imagepicker_check_default_background@3x.png */; };
+		57A53A76598DE085E82C41873928F397 /* CTImageCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8D0B289BF2A0366F208E49D7C8C5F0B /* CTImageCollectionViewController.m */; };
+		698D7AECAA54A891D86C40C1DD5F7078 /* CTImgPicPreNavBarView.h in Headers */ = {isa = PBXBuildFile; fileRef = E6BAB11E898742B27A4E869F484C5EC5 /* CTImgPicPreNavBarView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69E4E4B8C4D33DE4FE129571ADEDCFB1 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B9990B2663FAA8B1947C62B79604B9E /* AssetsLibrary.framework */; };
+		6A10C856E17E4F52BD83F3319DD1C1FA /* ct_imagepicker_check_default_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B04273F074EF739D1AF542AE9AA1A3C5 /* ct_imagepicker_check_default_background@2x.png */; };
+		74BDB9A4D83C6AED55E4079D00985EF8 /* CTImageCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FF274EFBB60D185C48DE679FB3AA144 /* CTImageCollectionViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		760D4BA033FA15F213AA22C32F3220AD /* ct_imagepicker_check_selected_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DEA1E236233EBABB0C2BC89F8C01C55 /* ct_imagepicker_check_selected_background@2x.png */; };
+		80620D25AAFF06B52218241F1AB3A9C2 /* ct_imgpicpre_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C99D30D8032763D79C75C8368F261E02 /* ct_imgpicpre_back@2x.png */; };
+		814D30023E8BB4750A266063A55D53EE /* CTImgPicPreNavBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C78FC0C7BC1A79050B8EB977EEC3769 /* CTImgPicPreNavBarView.m */; };
+		84DACD3E5C0228A0ECC9C103765F6E51 /* photo_check_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A91C242697FCA92EC3425E65705BD240 /* photo_check_selected@2x.png */; };
+		8B828CD9C98E5CFEA70EEFB28F1CC722 /* ct_imagepicker_check_selected_background@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E0D1D2DA1EC6E6D522C8643B7A43DCA3 /* ct_imagepicker_check_selected_background@3x.png */; };
+		8EC84F95D3618986C3791CD4E0053A8C /* CTImageAlbumViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CA8D9E8B2EC6508B1E749BBB5B2BBD3C /* CTImageAlbumViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93C62F8685FBEB6282A6FD75B5081533 /* CTImgPicPreBottomBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B72C05358D91D78E30E09FF6AC8375A /* CTImgPicPreBottomBar.m */; };
+		9539B810FD1B60D68A62CF8695AF09D5 /* CTImagePreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D9F38A1D070BB5C46DBA080E0282B5 /* CTImagePreViewController.m */; };
+		95744C717979E1A224F2D4B361F2A28F /* CTImagePickerPreViewConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 44E718FAA84845D14DB0A67389DAA7B6 /* CTImagePickerPreViewConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9670A923C121C8BEC7F0FFE03C9BD576 /* CTImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EA792B05829B276D255DBE27F45AEE /* CTImagePicker.m */; };
+		972AC16A2C1FD98516DEE27962945F1C /* ct_imgpicpre_save@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC8BB45C0B48DADD97A6BFBAC58DF954 /* ct_imgpicpre_save@2x.png */; };
+		980907F30C71F61BBAA70F2E045EAA24 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0A8B11282C28B1AB9BE35199526FD76 /* MapKit.framework */; };
+		AC7D2BA3C07A18AFC824FC4CCA2A904C /* CTImagePickerStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = B85F7E29B2D3C445A8E6028245426E21 /* CTImagePickerStyle.m */; };
+		B5FB208CC3EA56489455AA07685128C5 /* CTImagePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = CE99FFA3B8F3B81385DEA2A81F89699C /* CTImagePicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9B29EBC92F58D3BD49A5140662CA032 /* ct_imagepicker_check_default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 71607D821B4E127436084AC2807B88FF /* ct_imagepicker_check_default@2x.png */; };
+		C1986F6C1266FDC71F2E5782BB2F77D8 /* CTImageAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE316A7DBDACE92AFFE07FBAC5C434DA /* CTImageAlbumViewController.m */; };
+		C5F23DFFABD0926BD3A34BAB9420B443 /* Loc.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7479684BB989F9FA728B08F5A13F0A6D /* Loc.strings */; };
+		CC6AC867162B30EA76B8010A7DCD6057 /* Oval 77 Copy 20 + Rectangle 856 Copy 9@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A3DD3BD8222CFA7CB56B05C28125C538 /* Oval 77 Copy 20 + Rectangle 856 Copy 9@2x.png */; };
+		DA7DFF2380A7B30BA8DE16CD555E432E /* CTImagePickerStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = A1C511A3E95CCE61D5D4DB3BBF885883 /* CTImagePickerStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DBD13CEFE78C1623ED52223815B66A1F /* CTImgPicPreBottomBar.h in Headers */ = {isa = PBXBuildFile; fileRef = CF11652C915F2D662A526A7C027022F3 /* CTImgPicPreBottomBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC05954B277B2C83903769798B1334B1 /* UIImage+Color.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E85975C3477F0673DC6F819E15D66EA /* UIImage+Color.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2622A1B12A99C668951562FBFA79FF3 /* CTImagePreViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 87BAF8640A1602776D5B6FE67A3E806A /* CTImagePreViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EBE9A1C98FAD41D1DDF20708E087719D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC4904FBE5C62A1E6D27BF73611FAEC3 /* Foundation.framework */; };
-		F15A658C899EEAA0BA53B9B1342EFDA2 /* CTImagePickerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C89C70AA7F22F1E82F627C4380BBE18 /* CTImagePickerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F90B21B83B142E5AE4CFF4B0E2B9946B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0A8B11282C28B1AB9BE35199526FD76 /* MapKit.framework */; };
+		ED5036B1DF44851E83A96A3CD28F9A37 /* ct_imgpicpre_no_image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C8BBC8E5E69DD82F7693CB413F957C3F /* ct_imgpicpre_no_image@2x.png */; };
+		EDF6BEE14C50367FD602A698A32A9579 /* CTImageCollectionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F6891B96D0E89446D9ABE2AFADA5F71 /* CTImageCollectionViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F19F68DD27919448775BD1CD3C7F236C /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = D2535C9DF798B616A7C994E548297771 /* UIImage+Color.m */; };
+		F3D1738EA7F50B38CC9E9B48B4D5282F /* CTImagePickerDoneBtn.h in Headers */ = {isa = PBXBuildFile; fileRef = EAB519D6A591971FD2B75DDE1D96E7F1 /* CTImagePickerDoneBtn.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD7BDCC705920970399F3C418C673DB4 /* Oval 77 Copy 20 + Rectangle 856 Copy 9@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD5672844FB149C856A782892266DCD4 /* Oval 77 Copy 20 + Rectangle 856 Copy 9@3x.png */; };
 		FD85D320B8DFFFEA30359683858E6F16 /* Pods-CTImagePicker_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D536D5EE4AD70720933C3A8BB257F418 /* Pods-CTImagePicker_Tests-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C18D990CEA90B63B499383B74E2FDB81 /* PBXContainerItemProxy */ = {
+		8B633F13AFA3D52F9E0B2B7AF2EDAC26 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 97063EC50E000DC694B6B845F3F3EC4A;
+			remoteGlobalIDString = 32BC86CD33F702E8D2FE44365D4CB06C;
 			remoteInfo = "CTImagePicker-CTImagePicker";
 		};
 		E33884C11C41ACDA06EFA53DE71C081E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D0B9B12EE9E767A2F5933E383D04DD2C;
+			remoteGlobalIDString = 16D09B6CA51EA825D60ECCB1B0966177;
 			remoteInfo = CTImagePicker;
 		};
 		EFAF3D6E1CFDE142A3B4153E8230BDA2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D0B9B12EE9E767A2F5933E383D04DD2C;
+			remoteGlobalIDString = 16D09B6CA51EA825D60ECCB1B0966177;
 			remoteInfo = CTImagePicker;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00927FC4F6779EC3D97BEC38E141B853 /* CTImagePickerDoneBtn.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CTImagePickerDoneBtn.m; sourceTree = "<group>"; };
 		00A6BC848E88723F4E2EC8DD6E38B54D /* Pods-CTImagePicker_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CTImagePicker_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		1ABF8848FAD916BBB87CA5C672B973A0 /* CTImageCollectionViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CTImageCollectionViewCell.h; sourceTree = "<group>"; };
+		05165ABB2BBCEB3C521DF52E73BF42AF /* CTImgPreCollectionViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CTImgPreCollectionViewCell.m; sourceTree = "<group>"; };
+		0E85975C3477F0673DC6F819E15D66EA /* UIImage+Color.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
+		1B72C05358D91D78E30E09FF6AC8375A /* CTImgPicPreBottomBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CTImgPicPreBottomBar.m; sourceTree = "<group>"; };
 		2404EDBC72E5181CBDBA54E7D15E73A6 /* Pods-CTImagePicker_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CTImagePicker_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		253E484B6F51ADE96EC1003DB0886281 /* CTImagePicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CTImagePicker-dummy.m"; sourceTree = "<group>"; };
-		28C3AB8C449D4E79EDDF487676D84321 /* CTImagePicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CTImagePicker.h; sourceTree = "<group>"; };
-		2CE5E83D85A4A58AF50DC14612BEA197 /* photo_check_selected@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "photo_check_selected@2x.png"; sourceTree = "<group>"; };
+		2CFEDF3F33BBF1090C9AEF6ECD1E2D75 /* photo_check_default@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "photo_check_default@2x.png"; sourceTree = "<group>"; };
+		34EA792B05829B276D255DBE27F45AEE /* CTImagePicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CTImagePicker.m; sourceTree = "<group>"; };
 		372C5110230A9BDE624028A7EB16A799 /* CTImagePicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CTImagePicker.xcconfig; sourceTree = "<group>"; };
-		376D246042CD3195C953713C732833BD /* CTAlbumTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CTAlbumTableViewCell.m; sourceTree = "<group>"; };
 		3C2A03E15DED0FC9C2FA4F4CFD82A7C7 /* Pods-CTImagePicker_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CTImagePicker_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		3E2DCC6C0D9B7F0C7A6C900332B5FF18 /* Pods-CTImagePicker_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CTImagePicker_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		45D61B43C55A95A147BE7172897354C3 /* CTAlbumTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CTAlbumTableViewCell.h; sourceTree = "<group>"; };
-		4B1C9A721C3E47B300D93066 /* CTImagePickerDoneBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTImagePickerDoneBtn.h; sourceTree = "<group>"; };
-		4B1C9A731C3E47B300D93066 /* CTImagePickerDoneBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTImagePickerDoneBtn.m; sourceTree = "<group>"; };
+		44E718FAA84845D14DB0A67389DAA7B6 /* CTImagePickerPreViewConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CTImagePickerPreViewConfig.h; sourceTree = "<group>"; };
 		524FDB378E846AC43EDD6FC805341956 /* Pods-CTImagePicker_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CTImagePicker_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		5C89C70AA7F22F1E82F627C4380BBE18 /* CTImagePickerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CTImagePickerViewController.h; sourceTree = "<group>"; };
+		5C78FC0C7BC1A79050B8EB977EEC3769 /* CTImgPicPreNavBarView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CTImgPicPreNavBarView.m; sourceTree = "<group>"; };
+		5DEA1E236233EBABB0C2BC89F8C01C55 /* ct_imagepicker_check_selected_background@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "ct_imagepicker_check_selected_background@2x.png"; sourceTree = "<group>"; };
 		5ED6001CC55198CF8F6A88352179DE0F /* libCTImagePicker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCTImagePicker.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F6891B96D0E89446D9ABE2AFADA5F71 /* CTImageCollectionViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CTImageCollectionViewController.h; sourceTree = "<group>"; };
+		5FF274EFBB60D185C48DE679FB3AA144 /* CTImageCollectionViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CTImageCollectionViewCell.h; sourceTree = "<group>"; };
 		68D4C0326977B97532F551AEF251DCC1 /* CTImagePicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CTImagePicker-prefix.pch"; sourceTree = "<group>"; };
 		6F91ED21A39C12487DAA99677F53456F /* Pods-CTImagePicker_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CTImagePicker_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		7D852D79FB27E2767938CEC7DAFD2866 /* ct_no_image@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "ct_no_image@2x.png"; sourceTree = "<group>"; };
+		71607D821B4E127436084AC2807B88FF /* ct_imagepicker_check_default@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "ct_imagepicker_check_default@2x.png"; sourceTree = "<group>"; };
+		7479684BB989F9FA728B08F5A13F0A6D /* Loc.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; path = Loc.strings; sourceTree = "<group>"; };
+		7DEE88C9EBFE6341AF4C0FD48ACC0DAC /* CTImageCollectionViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CTImageCollectionViewCell.m; sourceTree = "<group>"; };
 		84032B377F28B405F3B44A1AE0F707DF /* libPods-CTImagePicker_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CTImagePicker_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		87BAF8640A1602776D5B6FE67A3E806A /* CTImagePreViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CTImagePreViewController.h; sourceTree = "<group>"; };
 		8B9990B2663FAA8B1947C62B79604B9E /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/AssetsLibrary.framework; sourceTree = DEVELOPER_DIR; };
-		958A73A7BABBB3409ED5E820FAD7954B /* CTImageCollectionViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CTImageCollectionViewController.h; sourceTree = "<group>"; };
-		96ED90F0E593B11618BCF3ECFD0B29A1 /* CTImagePickerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CTImagePickerViewController.m; sourceTree = "<group>"; };
+		97ABC3611CF9F29EEA9AA109E50AD328 /* ct_imagepicker_check_default_background@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "ct_imagepicker_check_default_background@3x.png"; sourceTree = "<group>"; };
 		99ACAAF0BF38739137DC44E09EF4A6B8 /* Pods-CTImagePicker_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CTImagePicker_Tests-resources.sh"; sourceTree = "<group>"; };
 		9B4955E129512B73E480A434EB8D563A /* Pods-CTImagePicker_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CTImagePicker_Example-resources.sh"; sourceTree = "<group>"; };
+		9BA69ADD90637E9E1D26E0EF76E74146 /* CTAlbumTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CTAlbumTableViewCell.m; sourceTree = "<group>"; };
+		9CFA93752B73F5C1A5FBC3A62FA240AD /* CTImgPreCollectionViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CTImgPreCollectionViewCell.h; sourceTree = "<group>"; };
+		A1C511A3E95CCE61D5D4DB3BBF885883 /* CTImagePickerStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CTImagePickerStyle.h; sourceTree = "<group>"; };
+		A2D9F38A1D070BB5C46DBA080E0282B5 /* CTImagePreViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CTImagePreViewController.m; sourceTree = "<group>"; };
+		A3DD3BD8222CFA7CB56B05C28125C538 /* Oval 77 Copy 20 + Rectangle 856 Copy 9@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "Oval 77 Copy 20 + Rectangle 856 Copy 9@2x.png"; sourceTree = "<group>"; };
 		A625ACF814D9B4C9CB84844A241EE053 /* Pods-CTImagePicker_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CTImagePicker_Example-dummy.m"; sourceTree = "<group>"; };
-		A7E04492AF15E5ED06CAAD372A4465CD /* CTImagePicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CTImagePicker.m; sourceTree = "<group>"; };
+		A91C242697FCA92EC3425E65705BD240 /* photo_check_selected@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "photo_check_selected@2x.png"; sourceTree = "<group>"; };
 		AA0C2823C4078A090C6EC7092515CF64 /* Pods-CTImagePicker_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CTImagePicker_Example.release.xcconfig"; sourceTree = "<group>"; };
 		AAC9FC12067BE030818958D96CC1F3C2 /* Pods-CTImagePicker_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CTImagePicker_Example-frameworks.sh"; sourceTree = "<group>"; };
+		B04273F074EF739D1AF542AE9AA1A3C5 /* ct_imagepicker_check_default_background@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "ct_imagepicker_check_default_background@2x.png"; sourceTree = "<group>"; };
+		B85F7E29B2D3C445A8E6028245426E21 /* CTImagePickerStyle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CTImagePickerStyle.m; sourceTree = "<group>"; };
+		B8D0B289BF2A0366F208E49D7C8C5F0B /* CTImageCollectionViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CTImageCollectionViewController.m; sourceTree = "<group>"; };
+		BA12B1446F631C2F48B8083EC490EE29 /* ct_imagepicker_check_default@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "ct_imagepicker_check_default@3x.png"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BC4904FBE5C62A1E6D27BF73611FAEC3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		C0273C7ACDC2F71D4324DAE847779984 /* CTImageCollectionViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CTImageCollectionViewCell.m; sourceTree = "<group>"; };
 		C1FB3C89B8FEE7C84B39273C362C3FD4 /* Pods-CTImagePicker_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CTImagePicker_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		C5FC81CB3BF65863D3336798FF7E53D1 /* CTAlbumTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CTAlbumTableViewCell.h; sourceTree = "<group>"; };
+		C8BBC8E5E69DD82F7693CB413F957C3F /* ct_imgpicpre_no_image@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "ct_imgpicpre_no_image@2x.png"; sourceTree = "<group>"; };
+		C99D30D8032763D79C75C8368F261E02 /* ct_imgpicpre_back@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "ct_imgpicpre_back@2x.png"; sourceTree = "<group>"; };
+		CA8D9E8B2EC6508B1E749BBB5B2BBD3C /* CTImageAlbumViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CTImageAlbumViewController.h; sourceTree = "<group>"; };
 		CD302A6CF16CE20F313C4E5ACDDF5464 /* Pods-CTImagePicker_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CTImagePicker_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D04705DD1536898E0037ADC7727F8D50 /* photo_check_default@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "photo_check_default@2x.png"; sourceTree = "<group>"; };
-		D0909E6CBF6FB16E425B4147D574304C /* Loc.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; path = Loc.strings; sourceTree = "<group>"; };
+		CE99FFA3B8F3B81385DEA2A81F89699C /* CTImagePicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CTImagePicker.h; sourceTree = "<group>"; };
+		CF11652C915F2D662A526A7C027022F3 /* CTImgPicPreBottomBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CTImgPicPreBottomBar.h; sourceTree = "<group>"; };
 		D0A8B11282C28B1AB9BE35199526FD76 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/MapKit.framework; sourceTree = DEVELOPER_DIR; };
+		D237AD40EE8746AAD5ED32FC93D48A1C /* CTConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CTConfig.h; sourceTree = "<group>"; };
+		D2535C9DF798B616A7C994E548297771 /* UIImage+Color.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
 		D536D5EE4AD70720933C3A8BB257F418 /* Pods-CTImagePicker_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CTImagePicker_Tests-dummy.m"; sourceTree = "<group>"; };
-		E4A0B581932A437DBEDC0FA4609815D5 /* CTConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CTConfig.h; sourceTree = "<group>"; };
+		DD5672844FB149C856A782892266DCD4 /* Oval 77 Copy 20 + Rectangle 856 Copy 9@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "Oval 77 Copy 20 + Rectangle 856 Copy 9@3x.png"; sourceTree = "<group>"; };
+		E0D1D2DA1EC6E6D522C8643B7A43DCA3 /* ct_imagepicker_check_selected_background@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "ct_imagepicker_check_selected_background@3x.png"; sourceTree = "<group>"; };
+		E6BAB11E898742B27A4E869F484C5EC5 /* CTImgPicPreNavBarView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CTImgPicPreNavBarView.h; sourceTree = "<group>"; };
 		E9B7CFB0BDECB199E770EDE3F7D9D791 /* libPods-CTImagePicker_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CTImagePicker_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAB519D6A591971FD2B75DDE1D96E7F1 /* CTImagePickerDoneBtn.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CTImagePickerDoneBtn.h; sourceTree = "<group>"; };
 		EBCA9D232F2F594DF4D69A7EA6BBECB7 /* CTImagePicker.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CTImagePicker.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED0EC0EDD3E0E75EE26834316CA483C3 /* CTImageAlbumViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CTImageAlbumViewController.m; sourceTree = "<group>"; };
-		EEB8603734ED324257BA5B731925B8B6 /* CTImageAlbumViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CTImageAlbumViewController.h; sourceTree = "<group>"; };
-		FA722551D982BC16F0287507B1873BCD /* CTImageCollectionViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CTImageCollectionViewController.m; sourceTree = "<group>"; };
+		EC8BB45C0B48DADD97A6BFBAC58DF954 /* ct_imgpicpre_save@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "ct_imgpicpre_save@2x.png"; sourceTree = "<group>"; };
 		FCCB4F901B4C37926996DE6B64ED9AE2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		FE316A7DBDACE92AFFE07FBAC5C434DA /* CTImageAlbumViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CTImageAlbumViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		05CC63720F972DA584DC05D83C1B57C7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		273FFB03EB111F6A37173932E66671F6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -125,14 +160,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2B989954B1656DCF3BFA0F0FA6BBE9DF /* Frameworks */ = {
+		7C97EEA46147E002CF63DC72A4A895A4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				298B97FF4A0F7ABB66AA9BA501B48284 /* AssetsLibrary.framework in Frameworks */,
-				439770AABA9EDC240CFBBF4535E91256 /* Foundation.framework in Frameworks */,
-				F90B21B83B142E5AE4CFF4B0E2B9946B /* MapKit.framework in Frameworks */,
-				2A82F35B902507EC5257A466E3A8E089 /* UIKit.framework in Frameworks */,
+				69E4E4B8C4D33DE4FE129571ADEDCFB1 /* AssetsLibrary.framework in Frameworks */,
+				2411E117AD92B8C67A74AA9ED3359EE5 /* Foundation.framework in Frameworks */,
+				980907F30C71F61BBAA70F2E045EAA24 /* MapKit.framework in Frameworks */,
+				32968F1727232B438A94219E8FCE8255 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +176,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				349FACC0C6FAC15488B8D0EDE5209B07 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E62D6C8A1674995E7E1B15B095290DCD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,24 +197,6 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		00E976B699224D121E6437EB0396E48F /* loc */ = {
-			isa = PBXGroup;
-			children = (
-				D0909E6CBF6FB16E425B4147D574304C /* Loc.strings */,
-			);
-			path = loc;
-			sourceTree = "<group>";
-		};
-		0D1F393F07B4A66A2C7B64EA9BC5BC08 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				EDCA52C23F584DBF75BBF660EBF2344E /* controllers */,
-				185C2E2C6398A96D9B619E67DCB180C9 /* util */,
-				7D77E5F8E88A1C80FFCD901F105329A2 /* views */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,10 +205,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		185C2E2C6398A96D9B619E67DCB180C9 /* util */ = {
+		1D768CDB1CECF3DB57791174DCF9DB5C /* loc */ = {
 			isa = PBXGroup;
 			children = (
-				E4A0B581932A437DBEDC0FA4609815D5 /* CTConfig.h */,
+				7479684BB989F9FA728B08F5A13F0A6D /* Loc.strings */,
+			);
+			path = loc;
+			sourceTree = "<group>";
+		};
+		23A2E0D9BB3E3AAD65A6430A16814CFF /* util */ = {
+			isa = PBXGroup;
+			children = (
+				D237AD40EE8746AAD5ED32FC93D48A1C /* CTConfig.h */,
 			);
 			path = util;
 			sourceTree = "<group>";
@@ -203,7 +235,15 @@
 		2F40AA12A35EBCD3EF84C9DE66FE560F /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				A8F0EB3CBE44534ACC99A5B081589B8A /* Assets */,
+				8A2EBA6730F04F75826BF0A4C4E48DB1 /* Assets */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		35CA70603AFD0F99865EEDD5D99D6494 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				6779E57E18787891F27C0051AFAA14D5 /* Classes */,
 			);
 			path = Pod;
 			sourceTree = "<group>";
@@ -217,6 +257,48 @@
 				84032B377F28B405F3B44A1AE0F707DF /* libPods-CTImagePicker_Tests.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		42A46BF21D6D74804E2AB40CFCA9D19D /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				87BAF8640A1602776D5B6FE67A3E806A /* CTImagePreViewController.h */,
+				A2D9F38A1D070BB5C46DBA080E0282B5 /* CTImagePreViewController.m */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		55CEA87F071D6B50373E1CAF2BDFE8C6 /* preview */ = {
+			isa = PBXGroup;
+			children = (
+				42A46BF21D6D74804E2AB40CFCA9D19D /* controllers */,
+				5EFAD0965746A02FF9E656C73C78C211 /* util */,
+				8FF280E614F3C85325F20DDAEDAEEA96 /* views */,
+			);
+			path = preview;
+			sourceTree = "<group>";
+		};
+		5EFAD0965746A02FF9E656C73C78C211 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				44E718FAA84845D14DB0A67389DAA7B6 /* CTImagePickerPreViewConfig.h */,
+				A1C511A3E95CCE61D5D4DB3BBF885883 /* CTImagePickerStyle.h */,
+				B85F7E29B2D3C445A8E6028245426E21 /* CTImagePickerStyle.m */,
+				0E85975C3477F0673DC6F819E15D66EA /* UIImage+Color.h */,
+				D2535C9DF798B616A7C994E548297771 /* UIImage+Color.m */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		6779E57E18787891F27C0051AFAA14D5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CD99C17D68528D2C1534F2E042D85C80 /* controllers */,
+				55CEA87F071D6B50373E1CAF2BDFE8C6 /* preview */,
+				23A2E0D9BB3E3AAD65A6430A16814CFF /* util */,
+				D9111ACAB5791587AABEAB7EE1E93344 /* views */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		6AAA0D2BDBB7CFBFA3509C8CFBBDEBA2 /* Support Files */ = {
@@ -239,19 +321,6 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		7D77E5F8E88A1C80FFCD901F105329A2 /* views */ = {
-			isa = PBXGroup;
-			children = (
-				45D61B43C55A95A147BE7172897354C3 /* CTAlbumTableViewCell.h */,
-				376D246042CD3195C953713C732833BD /* CTAlbumTableViewCell.m */,
-				1ABF8848FAD916BBB87CA5C672B973A0 /* CTImageCollectionViewCell.h */,
-				C0273C7ACDC2F71D4324DAE847779984 /* CTImageCollectionViewCell.m */,
-				4B1C9A721C3E47B300D93066 /* CTImagePickerDoneBtn.h */,
-				4B1C9A731C3E47B300D93066 /* CTImagePickerDoneBtn.m */,
-			);
-			path = views;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
@@ -271,24 +340,37 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		8A2EBA6730F04F75826BF0A4C4E48DB1 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				E754E39D0A4288ADAE1430BE96C2E162 /* images */,
+				1D768CDB1CECF3DB57791174DCF9DB5C /* loc */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		8FF280E614F3C85325F20DDAEDAEEA96 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				CF11652C915F2D662A526A7C027022F3 /* CTImgPicPreBottomBar.h */,
+				1B72C05358D91D78E30E09FF6AC8375A /* CTImgPicPreBottomBar.m */,
+				E6BAB11E898742B27A4E869F484C5EC5 /* CTImgPicPreNavBarView.h */,
+				5C78FC0C7BC1A79050B8EB977EEC3769 /* CTImgPicPreNavBarView.m */,
+				9CFA93752B73F5C1A5FBC3A62FA240AD /* CTImgPreCollectionViewCell.h */,
+				05165ABB2BBCEB3C521DF52E73BF42AF /* CTImgPreCollectionViewCell.m */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
 		9254F8614BA67DAAAB182316B6CD34EC /* CTImagePicker */ = {
 			isa = PBXGroup;
 			children = (
-				BC75F152487EEA2E94E61575921F4F8F /* Pod */,
+				35CA70603AFD0F99865EEDD5D99D6494 /* Pod */,
 				86ED451ECACED8F1325D513A304BCE14 /* Resources */,
 				6AAA0D2BDBB7CFBFA3509C8CFBBDEBA2 /* Support Files */,
 			);
 			name = CTImagePicker;
 			path = ../..;
-			sourceTree = "<group>";
-		};
-		A8F0EB3CBE44534ACC99A5B081589B8A /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				F960F53A797678FB8B905CEA91D920BA /* images */,
-				00E976B699224D121E6437EB0396E48F /* loc */,
-			);
-			path = Assets;
 			sourceTree = "<group>";
 		};
 		B3A1060049B68843EA563DB5B36B5B8A /* Pods-CTImagePicker_Tests */ = {
@@ -306,12 +388,30 @@
 			path = "Target Support Files/Pods-CTImagePicker_Tests";
 			sourceTree = "<group>";
 		};
-		BC75F152487EEA2E94E61575921F4F8F /* Pod */ = {
+		CD99C17D68528D2C1534F2E042D85C80 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
-				0D1F393F07B4A66A2C7B64EA9BC5BC08 /* Classes */,
+				CA8D9E8B2EC6508B1E749BBB5B2BBD3C /* CTImageAlbumViewController.h */,
+				FE316A7DBDACE92AFFE07FBAC5C434DA /* CTImageAlbumViewController.m */,
+				5F6891B96D0E89446D9ABE2AFADA5F71 /* CTImageCollectionViewController.h */,
+				B8D0B289BF2A0366F208E49D7C8C5F0B /* CTImageCollectionViewController.m */,
+				CE99FFA3B8F3B81385DEA2A81F89699C /* CTImagePicker.h */,
+				34EA792B05829B276D255DBE27F45AEE /* CTImagePicker.m */,
 			);
-			path = Pod;
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		D9111ACAB5791587AABEAB7EE1E93344 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				C5FC81CB3BF65863D3336798FF7E53D1 /* CTAlbumTableViewCell.h */,
+				9BA69ADD90637E9E1D26E0EF76E74146 /* CTAlbumTableViewCell.m */,
+				5FF274EFBB60D185C48DE679FB3AA144 /* CTImageCollectionViewCell.h */,
+				7DEE88C9EBFE6341AF4C0FD48ACC0DAC /* CTImageCollectionViewCell.m */,
+				EAB519D6A591971FD2B75DDE1D96E7F1 /* CTImagePickerDoneBtn.h */,
+				00927FC4F6779EC3D97BEC38E141B853 /* CTImagePickerDoneBtn.m */,
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 		DA0FA0E4CF69B72A300CB19C60205BE3 /* Pods-CTImagePicker_Example */ = {
@@ -329,27 +429,22 @@
 			path = "Target Support Files/Pods-CTImagePicker_Example";
 			sourceTree = "<group>";
 		};
-		EDCA52C23F584DBF75BBF660EBF2344E /* controllers */ = {
+		E754E39D0A4288ADAE1430BE96C2E162 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				EEB8603734ED324257BA5B731925B8B6 /* CTImageAlbumViewController.h */,
-				ED0EC0EDD3E0E75EE26834316CA483C3 /* CTImageAlbumViewController.m */,
-				958A73A7BABBB3409ED5E820FAD7954B /* CTImageCollectionViewController.h */,
-				FA722551D982BC16F0287507B1873BCD /* CTImageCollectionViewController.m */,
-				28C3AB8C449D4E79EDDF487676D84321 /* CTImagePicker.h */,
-				A7E04492AF15E5ED06CAAD372A4465CD /* CTImagePicker.m */,
-				5C89C70AA7F22F1E82F627C4380BBE18 /* CTImagePickerViewController.h */,
-				96ED90F0E593B11618BCF3ECFD0B29A1 /* CTImagePickerViewController.m */,
-			);
-			path = controllers;
-			sourceTree = "<group>";
-		};
-		F960F53A797678FB8B905CEA91D920BA /* images */ = {
-			isa = PBXGroup;
-			children = (
-				7D852D79FB27E2767938CEC7DAFD2866 /* ct_no_image@2x.png */,
-				D04705DD1536898E0037ADC7727F8D50 /* photo_check_default@2x.png */,
-				2CE5E83D85A4A58AF50DC14612BEA197 /* photo_check_selected@2x.png */,
+				71607D821B4E127436084AC2807B88FF /* ct_imagepicker_check_default@2x.png */,
+				BA12B1446F631C2F48B8083EC490EE29 /* ct_imagepicker_check_default@3x.png */,
+				B04273F074EF739D1AF542AE9AA1A3C5 /* ct_imagepicker_check_default_background@2x.png */,
+				97ABC3611CF9F29EEA9AA109E50AD328 /* ct_imagepicker_check_default_background@3x.png */,
+				5DEA1E236233EBABB0C2BC89F8C01C55 /* ct_imagepicker_check_selected_background@2x.png */,
+				E0D1D2DA1EC6E6D522C8643B7A43DCA3 /* ct_imagepicker_check_selected_background@3x.png */,
+				C99D30D8032763D79C75C8368F261E02 /* ct_imgpicpre_back@2x.png */,
+				C8BBC8E5E69DD82F7693CB413F957C3F /* ct_imgpicpre_no_image@2x.png */,
+				EC8BB45C0B48DADD97A6BFBAC58DF954 /* ct_imgpicpre_save@2x.png */,
+				A3DD3BD8222CFA7CB56B05C28125C538 /* Oval 77 Copy 20 + Rectangle 856 Copy 9@2x.png */,
+				DD5672844FB149C856A782892266DCD4 /* Oval 77 Copy 20 + Rectangle 856 Copy 9@3x.png */,
+				2CFEDF3F33BBF1090C9AEF6ECD1E2D75 /* photo_check_default@2x.png */,
+				A91C242697FCA92EC3425E65705BD240 /* photo_check_selected@2x.png */,
 			);
 			path = images;
 			sourceTree = "<group>";
@@ -357,18 +452,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		26B3309BC57FF12A52E9C96F463A3FCF /* Headers */ = {
+		531653ABEC429DE37DD575B44C7E6DF5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CA21C8D0EF0A8647293E0450E69424F /* CTAlbumTableViewCell.h in Headers */,
-				95C1C5D03BCD5A5B62D679E5CD88C57A /* CTConfig.h in Headers */,
-				43148B66FE60012BF7B295607A2FFD94 /* CTImageAlbumViewController.h in Headers */,
-				6BBC60B7908450E1A870BAB1BF95A161 /* CTImageCollectionViewCell.h in Headers */,
-				E90952ED4460C527A02D27C01966AA61 /* CTImageCollectionViewController.h in Headers */,
-				6F258DE2BB52E882277E768422968138 /* CTImagePicker.h in Headers */,
-				4B1C9A741C3E47B300D93066 /* CTImagePickerDoneBtn.h in Headers */,
-				F15A658C899EEAA0BA53B9B1342EFDA2 /* CTImagePickerViewController.h in Headers */,
+				15187F8FEA3B2C859E3C21541C1AC9AF /* CTAlbumTableViewCell.h in Headers */,
+				1CAD024B1280DCF59C569F9EBBA9EB4F /* CTConfig.h in Headers */,
+				8EC84F95D3618986C3791CD4E0053A8C /* CTImageAlbumViewController.h in Headers */,
+				74BDB9A4D83C6AED55E4079D00985EF8 /* CTImageCollectionViewCell.h in Headers */,
+				EDF6BEE14C50367FD602A698A32A9579 /* CTImageCollectionViewController.h in Headers */,
+				B5FB208CC3EA56489455AA07685128C5 /* CTImagePicker.h in Headers */,
+				F3D1738EA7F50B38CC9E9B48B4D5282F /* CTImagePickerDoneBtn.h in Headers */,
+				95744C717979E1A224F2D4B361F2A28F /* CTImagePickerPreViewConfig.h in Headers */,
+				DA7DFF2380A7B30BA8DE16CD555E432E /* CTImagePickerStyle.h in Headers */,
+				E2622A1B12A99C668951562FBFA79FF3 /* CTImagePreViewController.h in Headers */,
+				DBD13CEFE78C1623ED52223815B66A1F /* CTImgPicPreBottomBar.h in Headers */,
+				698D7AECAA54A891D86C40C1DD5F7078 /* CTImgPicPreNavBarView.h in Headers */,
+				1FAC4A7C3B417393C8BFDA114FC16C00 /* CTImgPreCollectionViewCell.h in Headers */,
+				DC05954B277B2C83903769798B1334B1 /* UIImage+Color.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,13 +493,31 @@
 			productReference = E9B7CFB0BDECB199E770EDE3F7D9D791 /* libPods-CTImagePicker_Example.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		97063EC50E000DC694B6B845F3F3EC4A /* CTImagePicker-CTImagePicker */ = {
+		16D09B6CA51EA825D60ECCB1B0966177 /* CTImagePicker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FB3A479157EB7378BB6EDEDC4D8D20FD /* Build configuration list for PBXNativeTarget "CTImagePicker-CTImagePicker" */;
+			buildConfigurationList = DE8394E1E539DD0505D6C1F6D87DE9F7 /* Build configuration list for PBXNativeTarget "CTImagePicker" */;
 			buildPhases = (
-				0796EBAA3793EDF7B2C835CBD5B994E2 /* Sources */,
-				05CC63720F972DA584DC05D83C1B57C7 /* Frameworks */,
-				14C34B1166797DD7EE01A4D81B861670 /* Resources */,
+				A6A8C2B7BBDE2ED954629234AF7CFC34 /* Sources */,
+				7C97EEA46147E002CF63DC72A4A895A4 /* Frameworks */,
+				531653ABEC429DE37DD575B44C7E6DF5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				394A45D02DF53FF1C489186A20724187 /* PBXTargetDependency */,
+			);
+			name = CTImagePicker;
+			productName = CTImagePicker;
+			productReference = 5ED6001CC55198CF8F6A88352179DE0F /* libCTImagePicker.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		32BC86CD33F702E8D2FE44365D4CB06C /* CTImagePicker-CTImagePicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D719ABBC0ECEE69BB148C865C624414 /* Build configuration list for PBXNativeTarget "CTImagePicker-CTImagePicker" */;
+			buildPhases = (
+				7DCF52297E02FF77908BB9D5CC09EA37 /* Sources */,
+				E62D6C8A1674995E7E1B15B095290DCD /* Frameworks */,
+				30F18A771B139C41D0C033521A7DB6A6 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -408,24 +527,6 @@
 			productName = "CTImagePicker-CTImagePicker";
 			productReference = EBCA9D232F2F594DF4D69A7EA6BBECB7 /* CTImagePicker.bundle */;
 			productType = "com.apple.product-type.bundle";
-		};
-		D0B9B12EE9E767A2F5933E383D04DD2C /* CTImagePicker */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4CF1D2838069755FD6105A233ADABDA7 /* Build configuration list for PBXNativeTarget "CTImagePicker" */;
-			buildPhases = (
-				2E98526CBD2764CE40ACB09E42EB47AE /* Sources */,
-				2B989954B1656DCF3BFA0F0FA6BBE9DF /* Frameworks */,
-				26B3309BC57FF12A52E9C96F463A3FCF /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A8EA838FE2798CCD5902D9D98150DCF1 /* PBXTargetDependency */,
-			);
-			name = CTImagePicker;
-			productName = CTImagePicker;
-			productReference = 5ED6001CC55198CF8F6A88352179DE0F /* libCTImagePicker.a */;
-			productType = "com.apple.product-type.library.static";
 		};
 		EA5C00E3A453919E4FF4CEB281B9EF23 /* Pods-CTImagePicker_Tests */ = {
 			isa = PBXNativeTarget;
@@ -465,8 +566,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D0B9B12EE9E767A2F5933E383D04DD2C /* CTImagePicker */,
-				97063EC50E000DC694B6B845F3F3EC4A /* CTImagePicker-CTImagePicker */,
+				16D09B6CA51EA825D60ECCB1B0966177 /* CTImagePicker */,
+				32BC86CD33F702E8D2FE44365D4CB06C /* CTImagePicker-CTImagePicker */,
 				118F3CEA46FB76CDFF8A44C2F97F03BF /* Pods-CTImagePicker_Example */,
 				EA5C00E3A453919E4FF4CEB281B9EF23 /* Pods-CTImagePicker_Tests */,
 			);
@@ -474,47 +575,35 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		14C34B1166797DD7EE01A4D81B861670 /* Resources */ = {
+		30F18A771B139C41D0C033521A7DB6A6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CE452B8BAA4F189F8C5345B14B5EA1A /* ct_no_image@2x.png in Resources */,
-				D83A32D7B61CCD7444223DE36C058AF3 /* Loc.strings in Resources */,
-				C8BAAE6272AFA05BD2E0FAC36EF1A178 /* photo_check_default@2x.png in Resources */,
-				BA13797B131C1C1381B23F90A546A144 /* photo_check_selected@2x.png in Resources */,
+				B9B29EBC92F58D3BD49A5140662CA032 /* ct_imagepicker_check_default@2x.png in Resources */,
+				3BE7BAB86CDBCDA59FFEF2420013D076 /* ct_imagepicker_check_default@3x.png in Resources */,
+				6A10C856E17E4F52BD83F3319DD1C1FA /* ct_imagepicker_check_default_background@2x.png in Resources */,
+				5479FCFFB67D5A282486648436559101 /* ct_imagepicker_check_default_background@3x.png in Resources */,
+				760D4BA033FA15F213AA22C32F3220AD /* ct_imagepicker_check_selected_background@2x.png in Resources */,
+				8B828CD9C98E5CFEA70EEFB28F1CC722 /* ct_imagepicker_check_selected_background@3x.png in Resources */,
+				80620D25AAFF06B52218241F1AB3A9C2 /* ct_imgpicpre_back@2x.png in Resources */,
+				ED5036B1DF44851E83A96A3CD28F9A37 /* ct_imgpicpre_no_image@2x.png in Resources */,
+				972AC16A2C1FD98516DEE27962945F1C /* ct_imgpicpre_save@2x.png in Resources */,
+				C5F23DFFABD0926BD3A34BAB9420B443 /* Loc.strings in Resources */,
+				CC6AC867162B30EA76B8010A7DCD6057 /* Oval 77 Copy 20 + Rectangle 856 Copy 9@2x.png in Resources */,
+				FD7BDCC705920970399F3C418C673DB4 /* Oval 77 Copy 20 + Rectangle 856 Copy 9@3x.png in Resources */,
+				16B16E772F3AB1BA044D693DD40DC5A4 /* photo_check_default@2x.png in Resources */,
+				84DACD3E5C0228A0ECC9C103765F6E51 /* photo_check_selected@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0796EBAA3793EDF7B2C835CBD5B994E2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1A8CA6ADBCBDD2C01E98B8793F4CE5E5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2D6A9995DAFF92AC9D2D54757EE5B23E /* Pods-CTImagePicker_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2E98526CBD2764CE40ACB09E42EB47AE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				33C227F1012A63C1A11532B568588097 /* CTAlbumTableViewCell.m in Sources */,
-				964AE1B3A6FEC6C5301D10E075C22A0D /* CTImageAlbumViewController.m in Sources */,
-				6B3FB5D789EE12FBA51984522B15504D /* CTImageCollectionViewCell.m in Sources */,
-				4B1C9A751C3E47B300D93066 /* CTImagePickerDoneBtn.m in Sources */,
-				2D780826FDCD03C64975EF3EF544103E /* CTImageCollectionViewController.m in Sources */,
-				216E3FBAD7D333AF0F12F9D985AD57BB /* CTImagePicker-dummy.m in Sources */,
-				E8BF6CD38FB788051264EBEC172CB59A /* CTImagePicker.m in Sources */,
-				7CCB0A1EF2540612E6C23D1D3C84BCFE /* CTImagePickerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,25 +615,52 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7DCF52297E02FF77908BB9D5CC09EA37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6A8C2B7BBDE2ED954629234AF7CFC34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				517505823253A2C78F9E2F37DE2051E1 /* CTAlbumTableViewCell.m in Sources */,
+				C1986F6C1266FDC71F2E5782BB2F77D8 /* CTImageAlbumViewController.m in Sources */,
+				3DDCFD230FC61F3BF046E8FD515704D2 /* CTImageCollectionViewCell.m in Sources */,
+				57A53A76598DE085E82C41873928F397 /* CTImageCollectionViewController.m in Sources */,
+				15014E953A6A5AD197879D1E81C01797 /* CTImagePicker-dummy.m in Sources */,
+				9670A923C121C8BEC7F0FFE03C9BD576 /* CTImagePicker.m in Sources */,
+				12666369DF5329B201CE5361DC1BD7AB /* CTImagePickerDoneBtn.m in Sources */,
+				AC7D2BA3C07A18AFC824FC4CCA2A904C /* CTImagePickerStyle.m in Sources */,
+				9539B810FD1B60D68A62CF8695AF09D5 /* CTImagePreViewController.m in Sources */,
+				93C62F8685FBEB6282A6FD75B5081533 /* CTImgPicPreBottomBar.m in Sources */,
+				814D30023E8BB4750A266063A55D53EE /* CTImgPicPreNavBarView.m in Sources */,
+				00B1CB49EDD32BFF9CA8BE43D3608E32 /* CTImgPreCollectionViewCell.m in Sources */,
+				F19F68DD27919448775BD1CD3C7F236C /* UIImage+Color.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		394A45D02DF53FF1C489186A20724187 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CTImagePicker-CTImagePicker";
+			target = 32BC86CD33F702E8D2FE44365D4CB06C /* CTImagePicker-CTImagePicker */;
+			targetProxy = 8B633F13AFA3D52F9E0B2B7AF2EDAC26 /* PBXContainerItemProxy */;
+		};
 		43416A86587BC3745AF5CFA9468FF9F2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CTImagePicker;
-			target = D0B9B12EE9E767A2F5933E383D04DD2C /* CTImagePicker */;
+			target = 16D09B6CA51EA825D60ECCB1B0966177 /* CTImagePicker */;
 			targetProxy = EFAF3D6E1CFDE142A3B4153E8230BDA2 /* PBXContainerItemProxy */;
-		};
-		A8EA838FE2798CCD5902D9D98150DCF1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "CTImagePicker-CTImagePicker";
-			target = 97063EC50E000DC694B6B845F3F3EC4A /* CTImagePicker-CTImagePicker */;
-			targetProxy = C18D990CEA90B63B499383B74E2FDB81 /* PBXContainerItemProxy */;
 		};
 		FA752A456AD29C27AD96AD4502CD1BA0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CTImagePicker;
-			target = D0B9B12EE9E767A2F5933E383D04DD2C /* CTImagePicker */;
+			target = 16D09B6CA51EA825D60ECCB1B0966177 /* CTImagePicker */;
 			targetProxy = E33884C11C41ACDA06EFA53DE71C081E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -640,7 +756,37 @@
 			};
 			name = Debug;
 		};
-		0EB89E58F85A5973A3EE59BE943949F5 /* Debug */ = {
+		14C923C8EE8349CA5C2A30355D38BA7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 372C5110230A9BDE624028A7EB16A799 /* CTImagePicker.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CTImagePicker/CTImagePicker-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		2EAF5030A2AC4DF4E77241A4CCA86993 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 372C5110230A9BDE624028A7EB16A799 /* CTImagePicker.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = CTImagePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		407D93D5952444CC45840108FDCA715A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 372C5110230A9BDE624028A7EB16A799 /* CTImagePicker.xcconfig */;
 			buildSettings = {
@@ -686,36 +832,6 @@
 			};
 			name = Release;
 		};
-		5FBC596D1FEABB7C24E9E4D4D99143D8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 372C5110230A9BDE624028A7EB16A799 /* CTImagePicker.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = CTImagePicker;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		98409ACB89A3FDAB99D06DA7570F2B3E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 372C5110230A9BDE624028A7EB16A799 /* CTImagePicker.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/CTImagePicker/CTImagePicker-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
 		ACBE1A0E5386F0A8FAE768241C28257E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3C2A03E15DED0FC9C2FA4F4CFD82A7C7 /* Pods-CTImagePicker_Example.debug.xcconfig */;
@@ -733,7 +849,7 @@
 			};
 			name = Debug;
 		};
-		C9AC27DFC5B72C79BE9B5D6FC7B2CA6F /* Release */ = {
+		FA0356704C5FE1AE983B885FD0291DDF /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 372C5110230A9BDE624028A7EB16A799 /* CTImagePicker.xcconfig */;
 			buildSettings = {
@@ -763,20 +879,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4CF1D2838069755FD6105A233ADABDA7 /* Build configuration list for PBXNativeTarget "CTImagePicker" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				98409ACB89A3FDAB99D06DA7570F2B3E /* Debug */,
-				C9AC27DFC5B72C79BE9B5D6FC7B2CA6F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		538C6FDAC2911FE4E95B6608EFD47BA4 /* Build configuration list for PBXNativeTarget "Pods-CTImagePicker_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4B2CFB72D15BA1C3692C3DCCC238E6AE /* Debug */,
 				0AB20C101164CD176C2950DF68A2AC5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D719ABBC0ECEE69BB148C865C624414 /* Build configuration list for PBXNativeTarget "CTImagePicker-CTImagePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				407D93D5952444CC45840108FDCA715A /* Debug */,
+				2EAF5030A2AC4DF4E77241A4CCA86993 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -790,11 +906,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FB3A479157EB7378BB6EDEDC4D8D20FD /* Build configuration list for PBXNativeTarget "CTImagePicker-CTImagePicker" */ = {
+		DE8394E1E539DD0505D6C1F6D87DE9F7 /* Build configuration list for PBXNativeTarget "CTImagePicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0EB89E58F85A5973A3EE59BE943949F5 /* Debug */,
-				5FBC596D1FEABB7C24E9E4D4D99143D8 /* Release */,
+				14C923C8EE8349CA5C2A30355D38BA7E /* Debug */,
+				FA0356704C5FE1AE983B885FD0291DDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
